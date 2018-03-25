@@ -1,0 +1,404 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Data retrieval from a web service",
+        "description": "",
+        "id": "testing-a-rest-api;data-retrieval-from-a-web-service",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1722457147,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send a GET request",
+            "match": {
+              "location": "RestAssuredGET_Steps.user_send_a_GET_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29540639,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "server processes the request",
+            "match": {
+              "location": "RestAssuredGET_Steps.server_processes_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3629501,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should verify the correct statusCode",
+            "match": {
+              "location": "RestAssuredGET_Steps.user_should_verify_the_correct_statusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Data Upload to a web service",
+        "description": "",
+        "id": "testing-a-rest-api;data-upload-to-a-web-service",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3056445,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User upload data to Json",
+            "match": {
+              "location": "RestAssuredPOST_Steps.user_upload_data_to_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39357869,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User send a POST request",
+            "match": {
+              "location": "RestAssuredPOST_Steps.user_send_a_POST_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69708,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the server should handle it and return a success status",
+            "match": {
+              "location": "RestAssuredPOST_Steps.the_server_should_handle_it_and_return_a_success_status()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Data Modify in a web service",
+        "description": "",
+        "id": "testing-a-rest-api;data-modify-in-a-web-service",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1462577,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User wants to modify data in Json",
+            "match": {
+              "location": "RestAssuredPUT_Steps.user_wants_to_modify_data_in_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19102029,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User send a PUT request",
+            "match": {
+              "location": "RestAssuredPUT_Steps.user_send_a_PUT_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89807,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the server should return a success status",
+            "match": {
+              "location": "RestAssuredPUT_Steps.the_server_should_return_a_success_status()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@put"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Data delete in a web service",
+        "description": "",
+        "id": "testing-a-rest-api;data-delete-in-a-web-service",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1612684,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User wants to delete data in Json",
+            "match": {
+              "location": "RestAssuredDELETE_Steps.user_wants_to_delete_data_in_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21255695,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User send a DELETE request",
+            "match": {
+              "location": "RestAssuredDELETE_Steps.user_send_a_DELETE_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100499,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the server should remove api and return a success status",
+            "match": {
+              "location": "RestAssuredDELETE_Steps.the_server_should_remove_api_and_return_a_success_status()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@delete"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Testing get request by giving invalid URI",
+        "description": "",
+        "id": "testing-a-rest-api;testing-get-request-by-giving-invalid-uri",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13710165,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User send a GET request with invalid url",
+            "match": {
+              "location": "RestAssuredGET_Steps.user_send_a_GET_request_with_invalid_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52602,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User should not get any response from server",
+            "match": {
+              "location": "RestAssuredGET_Steps.user_should_not_get_any_response_from_server()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@get_neg"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Data Upload to a web service with duplicate id",
+        "description": "",
+        "id": "testing-a-rest-api;data-upload-to-a-web-service-with-duplicate-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 551673,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User upload duplicate data to Json",
+            "match": {
+              "location": "RestAssuredPOST_Steps.user_upload_duplicate_data_to_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20890479,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User send a POST request",
+            "match": {
+              "location": "RestAssuredPOST_Steps.user_send_a_POST_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56878,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the server should return a invalid status code",
+            "match": {
+              "location": "RestAssuredPOST_Steps.the_server_should_return_a_invalid_status_code()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@post_neg"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Testing put request by giving invalid URI",
+        "description": "",
+        "id": "testing-a-rest-api;testing-put-request-by-giving-invalid-uri",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 514040,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User wants to modify data in Json",
+            "match": {
+              "location": "RestAssuredPUT_Steps.user_wants_to_modify_data_in_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14704889,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User send a PUT request by giving invalid id",
+            "match": {
+              "location": "RestAssuredPUT_Steps.user_send_a_PUT_request_by_giving_invalid_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72273,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the server should return a invalid status",
+            "match": {
+              "location": "RestAssuredPUT_Steps.the_server_should_return_a_invalid_status()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@put_neg"
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Testing delete request by giving invalid URI",
+        "description": "",
+        "id": "testing-a-rest-api;testing-delete-request-by-giving-invalid-uri",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15509734,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User send a DELETE request by giving invalid id",
+            "match": {
+              "location": "RestAssuredDELETE_Steps.user_send_a_DELETE_request_by_giving_invalid_id()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78689,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the server should return a invalid code",
+            "match": {
+              "location": "RestAssuredDELETE_Steps.the_server_should_return_a_invalid_code()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@del_neg"
+          }
+        ]
+      }
+    ],
+    "name": "Testing a REST API",
+    "description": "Users should be able to submit GET, POST, PUT and DELETE requests to a web service",
+    "id": "testing-a-rest-api",
+    "keyword": "Feature",
+    "uri": "features/RestAPI.feature"
+  }
+]
