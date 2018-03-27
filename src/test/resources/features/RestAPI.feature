@@ -5,19 +5,25 @@ Feature: Testing a REST API
 Scenario: Data retrieval from a web service 
 	Given User send a GET request 
 	When server processes the request 
-	Then User should verify the correct statusCode 
+	And User should verify the correct statusCode 
+	Then User should vaidate data
 	
 @post 
 Scenario: Data Upload to a web service 
 	Given User upload data to Json 
 	When User send a POST request 
-	Then the server should handle it and return a success status 
+	And the server should handle it and return a success status 
+	And User send a GET request
+	Then User should check data has posted or not
 	
 @put 
 Scenario: Data Modify in a web service 
 	Given User wants to modify data in Json 
 	When User send a PUT request 
-	Then the server should return a success status 
+	And the server should return a success status 
+	And User send a GET request
+	Then User should check data has modified or not
+	
 	
 @delete 
 Scenario: Data delete in a web service 
@@ -44,6 +50,6 @@ Scenario: Testing put request by giving invalid URI
 	Then the server should return a invalid status 
 	
 @del_neg 
-Scenario: Testing delete request by giving invalid URI 
-	Given User send a DELETE request by giving invalid id 
+Scenario: Trying to delete entire data in json 
+	Given User send a DELETE request
 	Then the server should return a invalid code

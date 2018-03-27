@@ -6,7 +6,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class RestAssuredDELETE_Action {
+public class DeleteAction {
 
 	static Response res;
 
@@ -18,7 +18,7 @@ public class RestAssuredDELETE_Action {
 	}
 
 	public static void deleteRequest() {
-		res = request.delete("http://localhost:3000/posts/6");
+		res = request.delete("http://localhost:3000/posts/26");
 
 	}
 
@@ -32,7 +32,7 @@ public class RestAssuredDELETE_Action {
 
 	public static void deleteNegRequest() {
 		request = RestAssured.given();
-		res = request.delete("http://localhost:3000/posts/32");
+		res = request.delete("http://localhost:3000/posts");
 		
 	}
 

@@ -12,37 +12,49 @@
         "steps": [
           {
             "result": {
-              "duration": 1722457147,
+              "duration": 1867782644,
               "status": "passed"
             },
             "line": 6,
             "name": "User send a GET request",
             "match": {
-              "location": "RestAssuredGET_Steps.user_send_a_GET_request()"
+              "location": "GetSteps.user_send_a_GET_request()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 29540639,
+              "duration": 49119054,
               "status": "passed"
             },
             "line": 7,
             "name": "server processes the request",
             "match": {
-              "location": "RestAssuredGET_Steps.server_processes_the_request()"
+              "location": "GetSteps.server_processes_the_request()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3629501,
+              "duration": 4666133,
               "status": "passed"
             },
             "line": 8,
             "name": "User should verify the correct statusCode",
             "match": {
-              "location": "RestAssuredGET_Steps.user_should_verify_the_correct_statusCode()"
+              "location": "GetSteps.user_should_verify_the_correct_statusCode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10392847,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should vaidate data",
+            "match": {
+              "location": "GetSteps.user_should_vaidate_data()"
             },
             "keyword": "Then "
           }
@@ -55,7 +67,7 @@
         ]
       },
       {
-        "line": 11,
+        "line": 12,
         "name": "Data Upload to a web service",
         "description": "",
         "id": "testing-a-rest-api;data-upload-to-a-web-service",
@@ -64,50 +76,74 @@
         "steps": [
           {
             "result": {
-              "duration": 3056445,
+              "duration": 2443188,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "User upload data to Json",
             "match": {
-              "location": "RestAssuredPOST_Steps.user_upload_data_to_Json()"
+              "location": "PostSteps.user_upload_data_to_Json()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 39357869,
+              "duration": 80081631,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "User send a POST request",
             "match": {
-              "location": "RestAssuredPOST_Steps.user_send_a_POST_request()"
+              "location": "PostSteps.user_send_a_POST_request()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 69708,
+              "duration": 88952,
               "status": "passed"
             },
-            "line": 14,
+            "line": 15,
             "name": "the server should handle it and return a success status",
             "match": {
-              "location": "RestAssuredPOST_Steps.the_server_should_handle_it_and_return_a_success_status()"
+              "location": "PostSteps.the_server_should_handle_it_and_return_a_success_status()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51951834,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User send a GET request",
+            "match": {
+              "location": "GetSteps.user_send_a_GET_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 426799,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should check data has posted or not",
+            "match": {
+              "location": "PostSteps.user_should_check_data_has_posted_or_not()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 10,
+            "line": 11,
             "name": "@post"
           }
         ]
       },
       {
-        "line": 17,
+        "line": 20,
         "name": "Data Modify in a web service",
         "description": "",
         "id": "testing-a-rest-api;data-modify-in-a-web-service",
@@ -116,25 +152,25 @@
         "steps": [
           {
             "result": {
-              "duration": 1462577,
+              "duration": 1714465,
               "status": "passed"
             },
-            "line": 18,
+            "line": 21,
             "name": "User wants to modify data in Json",
             "match": {
-              "location": "RestAssuredPUT_Steps.user_wants_to_modify_data_in_Json()"
+              "location": "PutSteps.user_wants_to_modify_data_in_Json()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 19102029,
+              "duration": 65547382,
               "status": "passed"
             },
-            "line": 19,
+            "line": 22,
             "name": "User send a PUT request",
             "match": {
-              "location": "RestAssuredPUT_Steps.user_send_a_PUT_request()"
+              "location": "PutSteps.user_send_a_PUT_request()"
             },
             "keyword": "When "
           },
@@ -143,23 +179,47 @@
               "duration": 89807,
               "status": "passed"
             },
-            "line": 20,
+            "line": 23,
             "name": "the server should return a success status",
             "match": {
-              "location": "RestAssuredPUT_Steps.the_server_should_return_a_success_status()"
+              "location": "PutSteps.the_server_should_return_a_success_status()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27286463,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User send a GET request",
+            "match": {
+              "location": "GetSteps.user_send_a_GET_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 474696,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User should check data has modified or not",
+            "match": {
+              "location": "PutSteps.user_should_check_data_has_modified_or_not()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 16,
+            "line": 19,
             "name": "@put"
           }
         ]
       },
       {
-        "line": 23,
+        "line": 29,
         "name": "Data delete in a web service",
         "description": "",
         "id": "testing-a-rest-api;data-delete-in-a-web-service",
@@ -168,50 +228,50 @@
         "steps": [
           {
             "result": {
-              "duration": 1612684,
+              "duration": 1007125,
               "status": "passed"
             },
-            "line": 24,
+            "line": 30,
             "name": "User wants to delete data in Json",
             "match": {
-              "location": "RestAssuredDELETE_Steps.user_wants_to_delete_data_in_Json()"
+              "location": "DeleteSteps.user_wants_to_delete_data_in_Json()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 21255695,
+              "duration": 31932496,
               "status": "passed"
             },
-            "line": 25,
+            "line": 31,
             "name": "User send a DELETE request",
             "match": {
-              "location": "RestAssuredDELETE_Steps.user_send_a_DELETE_request()"
+              "location": "DeleteSteps.user_send_a_DELETE_request()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 100499,
+              "duration": 81255,
               "status": "passed"
             },
-            "line": 26,
+            "line": 32,
             "name": "the server should remove api and return a success status",
             "match": {
-              "location": "RestAssuredDELETE_Steps.the_server_should_remove_api_and_return_a_success_status()"
+              "location": "DeleteSteps.the_server_should_remove_api_and_return_a_success_status()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 22,
+            "line": 28,
             "name": "@delete"
           }
         ]
       },
       {
-        "line": 30,
+        "line": 36,
         "name": "Testing get request by giving invalid URI",
         "description": "",
         "id": "testing-a-rest-api;testing-get-request-by-giving-invalid-uri",
@@ -220,38 +280,38 @@
         "steps": [
           {
             "result": {
-              "duration": 13710165,
+              "duration": 18717560,
               "status": "passed"
             },
-            "line": 31,
+            "line": 37,
             "name": "User send a GET request with invalid url",
             "match": {
-              "location": "RestAssuredGET_Steps.user_send_a_GET_request_with_invalid_url()"
+              "location": "GetSteps.user_send_a_GET_request_with_invalid_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 52602,
+              "duration": 67569,
               "status": "passed"
             },
-            "line": 32,
+            "line": 38,
             "name": "User should not get any response from server",
             "match": {
-              "location": "RestAssuredGET_Steps.user_should_not_get_any_response_from_server()"
+              "location": "GetSteps.user_should_not_get_any_response_from_server()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 29,
+            "line": 35,
             "name": "@get_neg"
           }
         ]
       },
       {
-        "line": 35,
+        "line": 41,
         "name": "Data Upload to a web service with duplicate id",
         "description": "",
         "id": "testing-a-rest-api;data-upload-to-a-web-service-with-duplicate-id",
@@ -260,50 +320,50 @@
         "steps": [
           {
             "result": {
-              "duration": 551673,
+              "duration": 2046752,
               "status": "passed"
             },
-            "line": 36,
+            "line": 42,
             "name": "User upload duplicate data to Json",
             "match": {
-              "location": "RestAssuredPOST_Steps.user_upload_duplicate_data_to_Json()"
+              "location": "PostSteps.user_upload_duplicate_data_to_Json()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 20890479,
+              "duration": 34022868,
               "status": "passed"
             },
-            "line": 37,
+            "line": 43,
             "name": "User send a POST request",
             "match": {
-              "location": "RestAssuredPOST_Steps.user_send_a_POST_request()"
+              "location": "PostSteps.user_send_a_POST_request()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 56878,
+              "duration": 71418,
               "status": "passed"
             },
-            "line": 38,
+            "line": 44,
             "name": "the server should return a invalid status code",
             "match": {
-              "location": "RestAssuredPOST_Steps.the_server_should_return_a_invalid_status_code()"
+              "location": "PostSteps.the_server_should_return_a_invalid_status_code()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 34,
+            "line": 40,
             "name": "@post_neg"
           }
         ]
       },
       {
-        "line": 41,
+        "line": 47,
         "name": "Testing put request by giving invalid URI",
         "description": "",
         "id": "testing-a-rest-api;testing-put-request-by-giving-invalid-uri",
@@ -312,77 +372,37 @@
         "steps": [
           {
             "result": {
-              "duration": 514040,
+              "duration": 641481,
               "status": "passed"
             },
-            "line": 42,
+            "line": 48,
             "name": "User wants to modify data in Json",
             "match": {
-              "location": "RestAssuredPUT_Steps.user_wants_to_modify_data_in_Json()"
+              "location": "PutSteps.user_wants_to_modify_data_in_Json()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 14704889,
+              "duration": 25586111,
               "status": "passed"
             },
-            "line": 43,
+            "line": 49,
             "name": "User send a PUT request by giving invalid id",
             "match": {
-              "location": "RestAssuredPUT_Steps.user_send_a_PUT_request_by_giving_invalid_id()"
+              "location": "PutSteps.user_send_a_PUT_request_by_giving_invalid_id()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 72273,
+              "duration": 65003,
               "status": "passed"
             },
-            "line": 44,
+            "line": 50,
             "name": "the server should return a invalid status",
             "match": {
-              "location": "RestAssuredPUT_Steps.the_server_should_return_a_invalid_status()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 40,
-            "name": "@put_neg"
-          }
-        ]
-      },
-      {
-        "line": 47,
-        "name": "Testing delete request by giving invalid URI",
-        "description": "",
-        "id": "testing-a-rest-api;testing-delete-request-by-giving-invalid-uri",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 15509734,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "User send a DELETE request by giving invalid id",
-            "match": {
-              "location": "RestAssuredDELETE_Steps.user_send_a_DELETE_request_by_giving_invalid_id()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 78689,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "the server should return a invalid code",
-            "match": {
-              "location": "RestAssuredDELETE_Steps.the_server_should_return_a_invalid_code()"
+              "location": "PutSteps.the_server_should_return_a_invalid_status()"
             },
             "keyword": "Then "
           }
@@ -390,6 +410,46 @@
         "tags": [
           {
             "line": 46,
+            "name": "@put_neg"
+          }
+        ]
+      },
+      {
+        "line": 53,
+        "name": "Trying to delete entire data in json",
+        "description": "",
+        "id": "testing-a-rest-api;trying-to-delete-entire-data-in-json",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14227620,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User send a DELETE request",
+            "match": {
+              "location": "DeleteSteps.user_send_a_DELETE_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68425,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the server should return a invalid code",
+            "match": {
+              "location": "DeleteSteps.the_server_should_return_a_invalid_code()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 52,
             "name": "@del_neg"
           }
         ]
