@@ -6,6 +6,8 @@ import org.apache.sling.commons.json.JSONException;
 import org.apache.sling.commons.json.JSONObject;
 import org.junit.Assert;
 
+import com.helpers.UrlBuilder;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -15,9 +17,12 @@ public class GetAction {
 
 	static Response res;
 	static String getData;
+	
+	
 
 	public static void getRequest() {
-		res = RestAssured.get("http://localhost:3000/posts");
+		RestAssured.baseURI = UrlBuilder.getBasePathURI().toString();
+		res = RestAssured.get("/posts");
 	}
 
 	public static void getData() {
