@@ -49,9 +49,10 @@ public class Props {
 
     public static void loadRunConfigProps(String configPropertyFileLocation) {
         properties = new Properties();
-        String env = System.getenv("env");
+        String env = System.getProperty("environment");
+        System.out.println("Environment" + env);
         if(env == null) {
-        	env = "dev";
+        	env = "uat";
         	
         }
         
