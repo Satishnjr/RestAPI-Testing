@@ -1,14 +1,14 @@
 package com.helpers;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import static java.lang.System.out;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import java.util.ResourceBundle;
 
-import static java.lang.System.out;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Props {
     private static final Logger LOG = LoggerFactory.getLogger(Props.class);
@@ -52,6 +52,7 @@ public class Props {
         String env = System.getenv("env");
         if(env == null) {
         	env = "dev";
+        	
         }
         
         try (InputStream inputStream = Props.class.getResourceAsStream("/envs/"+env+"/config.properties")) {

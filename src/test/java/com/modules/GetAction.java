@@ -21,7 +21,7 @@ public class GetAction {
 	
 
 	public static void getRequest() {
-		RestAssured.baseURI = UrlBuilder.getBasePathURI().toString();
+		RestAssured.baseURI = UrlBuilder.getBasePathURI();
 		res = RestAssured.get("/posts");
 	}
 

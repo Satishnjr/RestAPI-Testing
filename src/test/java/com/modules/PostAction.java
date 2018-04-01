@@ -4,6 +4,8 @@ import org.apache.sling.commons.json.JSONException;
 import org.apache.sling.commons.json.JSONObject;
 import org.junit.Assert;
 
+import com.helpers.UrlBuilder;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -20,14 +22,15 @@ public class PostAction {
 		request.header("Content-Type", "application/json");
 
 		JSONObject json = new JSONObject();
-		json.put("id", "26");
+		json.put("id", "478");
 		json.put("title", "Jenkins");
 		json.put("author", "raji");
 		request.body(json.toString());
 	}
 
 	public static void postRequest() {
-		res = request.post("http://localhost:3000/posts");
+		RestAssured.baseURI = UrlBuilder.getBasePathURI().toString();
+		res = request.post("/posts");
 
 	}
 
