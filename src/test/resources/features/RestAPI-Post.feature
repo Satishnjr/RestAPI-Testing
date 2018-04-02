@@ -2,10 +2,10 @@ Feature: Testing a REST API
 	Users should be able to submit POST request to a web service 
 
 
-Background:
-     Given User wants to delete data in Json 
-	 When User send a DELETE request 
-	 
+#Background:
+#     Given User wants to delete data in Json 
+#	 When User send a DELETE request 
+#	 
 
 @post	
 Scenario: Data Upload to a web service 
