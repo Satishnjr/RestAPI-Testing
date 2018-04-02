@@ -52,7 +52,7 @@ public class Props {
         String env = System.getProperty("environment");
         System.out.println("Environment" + env);
         if(env == null) {
-        	env = "uat";
+        	env = "local";
         	
         }
         

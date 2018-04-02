@@ -2,6 +2,8 @@ package com.modules;
 
 import org.junit.Assert;
 
+import com.helpers.UrlBuilder;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -18,13 +20,13 @@ public class DeleteAction {
 	}
 
 	public static void deleteRequest() {
-		res = request.delete("http://localhost:3000/posts/26");
+		res = request.delete(UrlBuilder.getBasePathURI()+"/posts/10");
 
 	}
 
 	public static void deleteStatusCode() {
 		int code = res.getStatusCode();
-		Assert.assertEquals(code, 200);
+		Assert.assertEquals(200, code);
 
 	}
 	
@@ -32,13 +34,13 @@ public class DeleteAction {
 
 	public static void deleteNegRequest() {
 		request = RestAssured.given();
-		res = request.delete("http://localhost:3000/posts");
+		res = request.delete(UrlBuilder.getBasePathURI() + "/posts");
 		
 	}
 
 	public static void delNegStatusCode() {
 		int code = res.getStatusCode();
-		Assert.assertEquals(code, 404);
+		Assert.assertEquals(404, code);
 		
 	}
 

@@ -4,73 +4,118 @@
     "elements": [
       {
         "line": 5,
-        "name": "Data retrieval from a web service",
+        "name": "",
         "description": "",
-        "id": "testing-a-rest-api;data-retrieval-from-a-web-service",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 1618941479,
+              "duration": 589864857,
               "status": "passed"
             },
             "line": 6,
-            "name": "User send a GET request",
+            "name": "User wants to delete data in Json",
             "match": {
-              "location": "GetSteps.user_send_a_GET_request()"
+              "location": "DeleteSteps.user_wants_to_delete_data_in_Json()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 23112987,
+              "duration": 1064575324,
               "status": "passed"
             },
             "line": 7,
-            "name": "server processes the request",
+            "name": "User send a DELETE request",
             "match": {
-              "location": "GetSteps.server_processes_the_request()"
+              "location": "DeleteSteps.user_send_a_DELETE_request()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Data Upload to a web service",
+        "description": "",
+        "id": "testing-a-rest-api;data-upload-to-a-web-service",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5507755,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User upload data to Json",
+            "match": {
+              "location": "PostSteps.user_upload_data_to_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41465331,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User send a POST request",
+            "match": {
+              "location": "PostSteps.user_send_a_POST_request()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1462149,
+              "duration": 1673410,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User should verify the correct statusCode",
+            "line": 14,
+            "name": "the server should handle it and return a success status",
             "match": {
-              "location": "GetSteps.user_should_verify_the_correct_statusCode()"
+              "location": "PostSteps.the_server_should_handle_it_and_return_a_success_status()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5263993,
+              "duration": 16003240,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User should vaidate data",
+            "line": 15,
+            "name": "User send a GET request",
             "match": {
-              "location": "GetSteps.user_should_vaidate_data()"
+              "location": "GetSteps.user_send_a_GET_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8241748,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should check data has posted or not",
+            "match": {
+              "location": "PostSteps.user_should_check_data_has_posted_or_not()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@get"
+            "line": 10,
+            "name": "@post"
           }
         ]
       }
     ],
     "name": "Testing a REST API",
-    "description": "Users should be able to submit GET, POST, PUT and DELETE requests to a web service",
+    "description": "Users should be able to submit POST request to a web service",
     "id": "testing-a-rest-api",
     "keyword": "Feature",
-    "uri": "features/RestAPI.feature"
+    "uri": "features/RestAPI-Post.feature"
   }
 ]
