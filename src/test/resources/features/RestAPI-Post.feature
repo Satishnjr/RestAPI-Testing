@@ -14,6 +14,7 @@ Scenario: Data Upload to a web service
 	And the server should handle it and return a success status 
 	And User send a GET request
 	Then User should check data has posted or not
+
 	
 @post-neg	
 Scenario: Data Upload to a web service with duplicate id
