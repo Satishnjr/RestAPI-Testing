@@ -38,8 +38,8 @@ public class GetAction {
 		for (int i = 0; i < array.length(); i++) {
 			JSONObject jsonObj = array.getJSONObject(i);
 			String id = jsonObj.getString("id");
-			if(id.equals("67")) {
-			Assert.assertEquals("67", id);
+			if(id.equals("45")) {
+			Assert.assertEquals("45", id);
 			}
 			String author = jsonObj.getString("author");
 			if(author.equals("raji")) {
