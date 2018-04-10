@@ -38,17 +38,17 @@ public class GetAction {
 		for (int i = 0; i < array.length(); i++) {
 			JSONObject jsonObj = array.getJSONObject(i);
 			String id = jsonObj.getString("id");
-			if(id.equals("45")) {
-			Assert.assertEquals("45", id);
-			}
-			String author = jsonObj.getString("author");
-			if(author.equals("raji")) {
-				Assert.assertEquals("raji", author);
+			if(id.equals("67")) {
+				Assert.assertEquals(id,"67");
 				}
-			String title = jsonObj.getString("title");
-			if(title.equals("Jenkins")) {
-				Assert.assertEquals("Jenkins", title);
-				}
+				String author = jsonObj.getString("author");
+				if(author.equals("raji")) {
+					Assert.assertEquals(author,"raji");
+					}
+				String title = jsonObj.getString("title");
+				if(title.equals("Jenkins")) {
+					Assert.assertEquals(title,"Jenkins");
+					}
 			}
 		}
 
