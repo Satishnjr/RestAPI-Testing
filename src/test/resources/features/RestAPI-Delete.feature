@@ -1,6 +1,4 @@
-Feature: Testing a REST API 
-	Users should be able to submit DELETE request to a web service 
-	
+Feature: Testing a REST API, Users should be able to submit DELETE request to a web service 
 	
 @delete 
 Scenario: Data delete in a web service 

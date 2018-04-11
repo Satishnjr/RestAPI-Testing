@@ -1,5 +1,4 @@
-Feature: Testing a REST API 
-	Users should be able to submit POST request to a web service 
+Feature: Testing a REST API, Users should be able to submit POST request to a web service 
 
 
 #Background:

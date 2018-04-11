@@ -1,6 +1,4 @@
-Feature: Testing a REST API 
-	Users should be able to submit PUT request to a web service 
-
+Feature: Testing a REST API, Users should be able to submit PUT request to a web service 
 
 @put 
 Scenario: Data Modify in a web service 

@@ -1,5 +1,4 @@
-Feature: Testing a REST API 
-	Users should be able to submit GET request to a web service 
+Feature: Testing a REST API, Users should be able to submit GET request to a web service 
 
 @get 
 Scenario: Data retrieval from a web service 
