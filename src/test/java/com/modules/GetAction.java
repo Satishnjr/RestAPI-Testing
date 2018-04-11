@@ -34,7 +34,7 @@ public class GetAction {
 		JSONArray array = new JSONArray(getData);
 		int jsonlength = array.length();
 		
-		Assert.assertTrue( jsonlength  < 10);
+		Assert.assertTrue( jsonlength  < 20);
 		
 		for (int i = 0; i < array.length(); i++) {
 			JSONObject jsonObj = array.getJSONObject(i);

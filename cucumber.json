@@ -3,19 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "line": 5,
+        "line": 4,
         "name": "Data retrieval from a web service",
         "description": "",
-        "id": "testing-a-rest-api;data-retrieval-from-a-web-service",
+        "id": "testing-a-rest-api,-users-should-be-able-to-submit-get-request-to-a-web-service;data-retrieval-from-a-web-service",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1893331976,
+              "duration": 1859148738,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "User send a GET request",
             "match": {
               "location": "GetSteps.user_send_a_GET_request()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 30393797,
+              "duration": 27203498,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "server processes the request",
             "match": {
               "location": "GetSteps.server_processes_the_request()"
@@ -36,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 2721590,
+              "duration": 2694220,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "User should verify the correct statusCode",
             "match": {
               "location": "GetSteps.user_should_verify_the_correct_statusCode()"
@@ -48,11 +48,10 @@
           },
           {
             "result": {
-              "duration": 7831628,
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.modules.GetAction.validateData(GetAction.java:37)\r\n\tat com.step_definitions.GetSteps.user_should_vaidate_data(GetSteps.java:33)\r\n\tat ✽.Then User should vaidate data(features/RestAPI-Get.feature:9)\r\n",
-              "status": "failed"
+              "duration": 6195851,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "User should vaidate data",
             "match": {
               "location": "GetSteps.user_should_vaidate_data()"
@@ -62,15 +61,15 @@
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 3,
             "name": "@get"
           }
         ]
       }
     ],
-    "name": "Testing a REST API",
-    "description": "Users should be able to submit GET request to a web service",
-    "id": "testing-a-rest-api",
+    "name": "Testing a REST API, Users should be able to submit GET request to a web service",
+    "description": "",
+    "id": "testing-a-rest-api,-users-should-be-able-to-submit-get-request-to-a-web-service",
     "keyword": "Feature",
     "uri": "features/RestAPI-Get.feature"
   }
