@@ -1,6 +1,7 @@
 package com.modules;
 
 
+
 import org.apache.sling.commons.json.JSONArray;
 import org.apache.sling.commons.json.JSONException;
 import org.apache.sling.commons.json.JSONObject;
@@ -21,13 +22,11 @@ public class GetAction {
 	
 
 	public static void getRequest() {
-		RestAssured.baseURI = UrlBuilder.getBasePathURI();
-		res = RestAssured.get("/posts");
+		res = RestAssured.get(UrlBuilder.getBasePathURI() + "/posts");
 	}
 
 	public static void getData() {
 		getData = res.asString();
-		// System.out.println(data);
 	}
 
 	public static void validateData() throws JSONException {
@@ -35,22 +34,22 @@ public class GetAction {
 		JSONArray array = new JSONArray(getData);
 		int jsonlength = array.length();
 		
-		Assert.assertTrue( jsonlength  < 5);
+		Assert.assertTrue( jsonlength  < 20);
 		
 		for (int i = 0; i < array.length(); i++) {
 			JSONObject jsonObj = array.getJSONObject(i);
 			String id = jsonObj.getString("id");
 			if(id.equals("67")) {
-			Assert.assertEquals(id,"67");
-			}
-			String author = jsonObj.getString("author");
-			if(author.equals("raji")) {
-				Assert.assertEquals(author,"raji");
+				Assert.assertEquals("67",id);
 				}
-			String title = jsonObj.getString("title");
-			if(title.equals("Jenkins")) {
-				Assert.assertEquals(title,"Jenkins");
-				}
+				String author = jsonObj.getString("author");
+				if(author.equals("raji")) {
+					Assert.assertEquals("raji",author);
+					}
+				String title = jsonObj.getString("title");
+				if(title.equals("Jenkins")) {
+					Assert.assertEquals("Jenkins", title);
+					}
 			}
 		}
 
@@ -59,19 +58,19 @@ public class GetAction {
 	public static void statusCode() {
 		int code = res.getStatusCode();
 
-		Assert.assertEquals(code, 200);
+		Assert.assertEquals(200, code);
 	}
 
 	// **********************************Negative TestCases**********************************//
 
 	public static void getNegRequest() {
-		res = RestAssured.get("http://localhost:3000/posts/@");
+		res = RestAssured.get(UrlBuilder.getBasePathURI() + "/posts/@");
 
 	}
 
 	public static void getInvalidResponse() {
 		int code = res.getStatusCode();
-		Assert.assertEquals(code, 404);
+		Assert.assertEquals(404, code);
 	}
 
 }

@@ -22,21 +22,20 @@ public class PostAction {
 		request.header("Content-Type", "application/json");
 
 		JSONObject json = new JSONObject();
-		json.put("id", "478");
-		json.put("title", "Jenkins");
+		json.put("id", "10");
+		json.put("title", "ruby");
 		json.put("author", "raji");
 		request.body(json.toString());
 	}
 
 	public static void postRequest() {
-		RestAssured.baseURI = UrlBuilder.getBasePathURI().toString();
-		res = request.post("/posts");
+		res = request.post(UrlBuilder.getBasePathURI()+"/posts");
 
 	}
 
 	public static void postStatusCode() {
 		int code = res.getStatusCode();
-		Assert.assertEquals(code, 201);
+		Assert.assertEquals(201, code);
 
 	}
 	
@@ -44,7 +43,7 @@ public class PostAction {
 		String getData = res.asString();
 		JSONObject obj = new JSONObject (getData);
 	Object key = obj.get("id");
-	Assert.assertEquals(key, "26");
+	Assert.assertEquals("10", key);
 	}
 	
 	
@@ -56,16 +55,16 @@ public class PostAction {
 		request.header("Content-Type", "application/json");
 
 		JSONObject json = new JSONObject();
-		json.put("id", "60");
-		json.put("title", "Jenkins");
-		json.put("author", "Satish");
+		json.put("id", "20");
+		json.put("title", "cucumber");
+		json.put("author", "satish");
 		request.body(json.toString());
 		
 	}
 
 	public static void postNegStatusCode() {
 		int code = res.getStatusCode();
-		Assert.assertEquals(code, 500);
+		Assert.assertEquals(500, code);
 	}
 
 	

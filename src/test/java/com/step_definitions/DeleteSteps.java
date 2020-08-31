@@ -28,8 +28,8 @@ public class DeleteSteps {
 
 	//**********************************Negative Test Cases**********************************//
 	
-	@Given("^User send a DELETE request by giving invalid id$")
-	public void user_send_a_DELETE_request_by_giving_invalid_id() throws Throwable {
+	@Given("^User send a DELETE request by giving base url$")
+	public void user_send_a_DELETE_request_by_giving_base_url() throws Throwable {
 		DeleteAction.deleteNegRequest();
 	}
 	
